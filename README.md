@@ -1,2 +1,3 @@
-# Basics of computer
- Basics of computer (java & c)
+ Basics of computer 
+ java & c
+ Dr.tanha
