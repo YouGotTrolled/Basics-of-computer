@@ -18,7 +18,7 @@ public class taklifv2 {
             if(x%10!=0){
                 System.out.print(" و ");
             }
-            temp=(x-(temp*100))/10;
+            temp=((x%100)-(x%10))/10;
             System.out.print(dahegan[temp]);
         }
         if(x%100!=0){
