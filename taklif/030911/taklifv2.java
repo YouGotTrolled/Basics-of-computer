@@ -15,13 +15,13 @@ public class taklifv2 {
         else {
             temp=x%10;
             System.out.print(yakab[temp]);
-            if(x%10!=0){
+            if(x%10!=0 && x/10!=0){
                 System.out.print(" و ");
             }
             temp=((x%100)-(x%10))/10;
             System.out.print(dahegan[temp]);
         }
-        if(x%100!=0){
+        if(x%100>9 && x/100!=0){
             System.out.print(" و ");
         }
         temp=x/100;
