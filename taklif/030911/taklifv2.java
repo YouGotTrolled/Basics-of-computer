@@ -6,25 +6,34 @@ public class taklifv2 {
         String[] dahegan ={ "", "ده" ,"بیست","سی","چهل","پنجاه","شصت","هفتاد","هشتاد","نود"};
         String[] es ={"یازده" ,"دوازده","سیزده","چهارده","پانزده","شانزده","هوده","هجده","نوزده"};
         Scanner scan = new Scanner(System.in);
+        System.out.println("عدد را وارد کنید");
         int x=scan.nextInt();
         int temp=x/100;
-        if(x-(temp*100)>10 && x-(temp*100)<20){
-            temp=(x%10)-1;
-            System.out.print(es[temp]);
+        if(x>999 || x<0){
+            System.out.println("عدد غیر مجاز");
         }
-        else {
-            temp=x%10;
-            System.out.print(yakab[temp]);
-            if(x%10!=0 && x/10!=0){
+        else if(x==0){
+            System.out.println("صفر");
+        }
+        else{
+            if(x-(temp*100)>10 && x-(temp*100)<20){
+                temp=(x%10)-1;
+                System.out.print(es[temp]);
+            }
+            else {
+                temp=x%10;
+                System.out.print(yakab[temp]);
+                if(x%10!=0 && x/10!=0){
+                    System.out.print(" و ");
+                }
+                temp=((x%100)-(x%10))/10;
+                System.out.print(dahegan[temp]);
+            }
+            if(x%100>9 && x/100!=0){
                 System.out.print(" و ");
             }
-            temp=((x%100)-(x%10))/10;
-            System.out.print(dahegan[temp]);
+            temp=x/100;
+            System.out.print(sadegan[temp]);
         }
-        if(x%100>9 && x/100!=0){
-            System.out.print(" و ");
-        }
-        temp=x/100;
-        System.out.print(sadegan[temp]);
     }
 }
