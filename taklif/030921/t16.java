@@ -1,12 +1,14 @@
 import java.util.Scanner;
-public class t6 {
+public class t16 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("عدد را وارد کنید");
         int x=scan.nextInt();
-        int y=scan.nextInt();
-        int z=scan.nextInt();
-        System.out.println((x + y + z));
-        System.out.println(((x + y + z)/3));
+        if(x%5==0&&x%7==0){
+            System.out.println("عدد بر 5و7 بخشپزیر است");
+        }
+        else{
+            System.out.println("عدد بر 5و7 بخشپزیر نیست");
+        }
     }
 }
