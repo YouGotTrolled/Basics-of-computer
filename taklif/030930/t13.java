@@ -7,9 +7,10 @@ public class t13{
         int sum;
         int k=0;
         int l=0;
+        int x;
         for(int i=0;i<n;i++){
             System.out.println("enter the number:");
-            int x=scan.nextInt();
+            x=scan.nextInt();
             if(x!=1){
                 sum=1;
                 for(int j=2;j<=x/2;j++){
