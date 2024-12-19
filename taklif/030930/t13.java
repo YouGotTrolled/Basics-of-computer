@@ -1,11 +1,12 @@
 import java.util.Scanner;
-public class t8{
+public class t13{
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
         System.out.println("enter the number:");
         int n=scan.nextInt();
         int sum;
         int k=0;
+        int l=0;
         for(int i=0;i<n;i++){
             System.out.println("enter the number:");
             int x=scan.nextInt();
@@ -20,8 +21,13 @@ public class t8{
                     System.out.println("کامل هست");
                     k++;
                 }
+                else if(sum==1){
+                    System.out.println("اول هست");
+                    l++;
+                }
             }
         }
-        System.out.print("تعداد ="+k);
+        System.out.println("تعداد کامل="+k);
+        System.out.print("تعداد اول="+l);
     }
 }
