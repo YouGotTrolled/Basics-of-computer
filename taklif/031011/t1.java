@@ -30,17 +30,13 @@ public class t1{
             }
             temp=scan.nextLine();
             System.out.println("please enter name in english");
-            String name=scan.nextLine();
-            n[i]=name;
+            n[i]=scan.nextLine();
             System.out.println("please enter family name in english");
-            String fname=scan.nextLine();
-            fn[i]=fname;
+            fn[i]=scan.nextLine();
             System.out.println("please enter id");
-            int IDt=scan.nextInt();
-            ID[i]=IDt;
+            ID[i]=scan.nextInt();
             System.out.println("please enter avrege");
-            double ave=scan.nextDouble();
-            av[i]=ave;
+            av[i]=scan.nextDouble();
             System.out.println("----------------");
         }
         for(i=0;i<x;i++){
