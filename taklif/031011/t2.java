@@ -15,10 +15,6 @@ public class t2{
         if(y1==x2){
             int i;
             int j;
-            int i1;
-            int j1;
-            int i2;
-            int j2;
             int k;
             int sum;
             int[][] matrix3=new int[x1][y2];
@@ -35,14 +31,10 @@ public class t2{
                 }
             }
             for(i=0;i<x1;i++){
-                for(j=0;j<y2;j++){   
-                    i1=i;
-                    j1=0;
-                    i2=0;
-                    j2=j;
+                for(j=0;j<y2;j++){
                     sum=0;
                     for(k=0;k<x2;k++){
-                        sum+=matrix1[i1][j1++]*matrix2[i2++][j2];
+                        sum+=matrix1[i][k]*matrix2[k][j];
                     }
                     matrix3[i][j]=sum;
                 }
