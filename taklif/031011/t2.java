@@ -39,12 +39,46 @@ public class t2{
                     matrix3[i][j]=sum;
                 }
             }
+            System.out.print("[");
             for(i=0;i<x1;i++){
-                for(j=0;j<y2;j++){
-                    System.out.println("matrix3["+(i+1)+"]["+(j+1)+"]="+matrix3[i][j]);
+                System.out.print("[ ");
+                for(j=0;j<y1;j++){
+                    System.out.print(matrix1[i][j]+" ");
+                }
+                if(i==x1-1){
+                    System.out.print("]");
+                }
+                else{
+                    System.out.println("],");
                 }
             }
-
+            System.out.print("]\n*\n[");
+            for(i=0;i<x2;i++){
+                System.out.print("[ ");
+                for(j=0;j<y2;j++){
+                    System.out.print(matrix2[i][j]+" ");
+                }
+                if(i==x2-1){
+                    System.out.print("]");
+                }
+                else{
+                    System.out.println("],");
+                }
+            }
+            System.out.print("]\n=\n[");
+            for(i=0;i<x1;i++){
+                System.out.print("[ ");
+                for(j=0;j<y2;j++){
+                    System.out.print(matrix3[i][j]+" ");
+                }
+                if(i==x1-1){
+                    System.out.print("]");
+                }
+                else{
+                    System.out.println("],");
+                }
+            }
+            System.out.print("]");
         }
         else {
             System.out.print("error");
