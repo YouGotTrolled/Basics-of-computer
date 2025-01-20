@@ -9,6 +9,7 @@ public class un1{
         int[] quantity=new int[n];
         int[] price=new int[n];
         int[] darkhars=new int[n];
+        String[] list=new String[n];
         for(int i=0;i<n;i++){
             System.out.println("name?");
             scan.nextLine();
@@ -27,7 +28,7 @@ public class un1{
             System.out.println(name[i]);
         }
         second(name,price);
-        third(name,darkhars,quantity);
+        third(name,darkhars,quantity,list);
     }
     public static void first(String[] a,int[] b,int[] c,int[] d,int[] e){
         String temp;
@@ -66,10 +67,11 @@ public class un1{
             }
         }
     }
-    public static void third(String[] a,int[] b,int[] c){
+    public static void third(String[] a,int[] b,int[] c,String[] d){
+        int j=0;
         for(int i=0;i<a.length;i++){
             if(b[i]>c[i]){
-                System.out.println(a[i]);
+                d[j++]=a[i];
             }
         }
     }
