@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 public class un3{
@@ -6,6 +7,7 @@ public class un3{
         System.out.println("String?");
         String in=scan.nextLine();
         first(in);
+        second(in);
     }
     public static void first(String a){
         String temp;
@@ -37,6 +39,25 @@ public class un3{
         }
         for(i=0;i<words.length;i++){
             System.out.println(words[i]+"="+repeat[i]);
+        }
+    }
+    public static void second(String a){
+        try{
+            String temp;
+            String tem;
+            StringTokenizer spt = new StringTokenizer(a);
+            PrintWriter writer=new PrintWriter(new FileWriter("reverse.txt"));
+            while(spt.hasMoreTokens()){
+                tem="";
+                temp=spt.nextToken();
+                for(int i=(temp.length()-1);i>-1;i--){
+                    tem+=String.valueOf(temp.charAt(i));
+                }
+                writer.print(tem);
+            }
+            writer.close();
+        }catch (IOException e){
+            e.printStackTrace();
         }
     }
 }
