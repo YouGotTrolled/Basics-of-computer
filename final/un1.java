@@ -22,14 +22,14 @@ public class un1{
             System.out.println("darkhars?");
             darkhars[i]=scan.nextInt();
         }
-        first(name,code,quantity,price);
+        first(name,code,quantity,price,darkhars);
         for(int i=0;i<n;i++){
             System.out.println(name[i]);
         }
         second(name,price);
         third(name,darkhars,quantity);
     }
-    public static void first(String[] a,int[] b,int[] c,int[] d){
+    public static void first(String[] a,int[] b,int[] c,int[] d,int[] e){
         String temp;
         int tem;
         for(int i=0;i<a.length;i++){
@@ -47,6 +47,9 @@ public class un1{
                     tem=d[i];
                     d[i]=d[j];
                     d[j]=tem;
+                    tem=e[i];
+                    e[i]=e[j];
+                    e[j]=tem;
                 }
             }
         }
