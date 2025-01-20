@@ -1,0 +1,8 @@
+a_10
+b_ac
+ab
+cb
+ac
+ba
+bc
+ac
