@@ -53,7 +53,7 @@ public class un3{
                 for(int i=(temp.length()-1);i>-1;i--){
                     tem+=String.valueOf(temp.charAt(i));
                 }
-                writer.print(tem);
+                writer.print(tem+" ");
             }
             writer.close();
         }catch (IOException e){
